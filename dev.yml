@@ -1,1 +1,17 @@
-
+spring:
+    tenants:
+      datasources:
+        cat:
+          url: jdbc:postgresql://localhost:5432/devTenant
+          driverClassName: org.postgresql.Driver
+          username: postgres
+          password: Shivam@123
+          maximum-pool-size: 16
+          pool-name: Hikari-Cat
+        dog:
+          url: jdbc:postgresql://localhost:5432/tenant6
+          driverClassName: org.postgresql.Driver
+          username: postgres
+          password: Shivam@123
+          maximum-pool-size: 16
+          pool-name: Hikari-Dog
